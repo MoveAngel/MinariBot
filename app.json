@@ -1,0 +1,39 @@
+{
+    "name": "Minari",
+    "description": "A Discord music and moderation bot writen on javascript.",
+    "repository": "https://github.com/MoveAngel/MinariBot",
+    "logo": "https://i.ibb.co/FBnDfV5/myoui-mina-on-Tumblr.jpg",
+    "keywords": ["node", "discord", "youtube"],
+    "image": "heroku/nodejs",
+    "buildpacks": [
+      {
+        "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+      },
+      {
+        "url": "heroku/nodejs"
+      }
+    ],
+    "env": {
+      "TOKEN": {
+        "description": "The token of your Discord Bot",
+        "required": "true"
+      },
+      "OWNERID": {
+        "description": "Your Discord user ID, needed for some commands...",
+        "required": "true"
+      },
+      "BOT_INVITE": {
+        "description": "Invite link for the bot",
+        "required": "true"
+      },
+      "DONATE_URL": {
+        "description": "Fill of your donation link",
+        "required": "true"
+      },
+      "PREFIX": {
+        "description": "The prefix you want to use with the bot.",
+        "value": ".",
+        "required": "true"
+      }
+    }  
+  }

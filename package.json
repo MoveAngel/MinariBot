@@ -1,0 +1,24 @@
+{
+  "name": "minaribot",
+  "version": "1.0.0",
+  "description": "A Discord music and moderation bot writen on javascript.",
+  "main": "server.js",
+  "scripts": {
+    "stable": "node server.js"
+  },
+  "engines": {
+    "node": "12.16.3"
+  },
+  "auto-updater": {
+    "repo": "MoveAngel/MinariBot",
+    "branch": "mina"
+  },
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "@discordjs/opus": "^0.3.2",
+    "ffmpeg-static": "^4.2.1",
+    "request": "2.88.2",
+    "yt-search": "^1.1.2",
+    "ytdl-core": "^2.1.7"
+  }
+}
