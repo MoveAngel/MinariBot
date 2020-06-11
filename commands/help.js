@@ -2,7 +2,7 @@ const prefix = process.env.PREFIX;
 
 exports.run = (client, message, args, ops) => {
   message.reply("I'm sending you a private message with a list of my commands.");
-  let helpMsg = `**List of my commands:**`;
+  let helpMsg = `💜 **List of my commands:** 💜`;
   helpMsg += `\n**Music**`;
   helpMsg += `\n__${prefix}play__ » Play a song in the current voice channel`;
   helpMsg += `\n__${prefix}leave__ » Makes the bot leave from the current voice channel`;
@@ -23,13 +23,9 @@ exports.run = (client, message, args, ops) => {
   helpMsg += `\n__${prefix}help__ » Get a private message with a list of commands`;
   helpMsg += `\n__${prefix}invite__ » Get the invite link for the bot`;
   helpMsg += `\n__${prefix}donate__ » Donate some beers for dev`;
-  helpMsg += `\n__${prefix}mcstatus__ » Get status of a Minecraft server (Java and MCPE)`;
-  helpMsg += `\n**Tip:** If you add a role named ___mcpestatus__, the default port for the status command will be 19132.`;
-  helpMsg += `\n__${prefix}mcskin__ (or __${prefix}skin__) » Get a skin using username (Java only usernames)`;
   helpMsg += `\n__${prefix}8ball__ » Ask the magic 8ball about your future`;
   helpMsg += `\n__${prefix}meme__ » Get a random meme from meme subreddits`;
   helpMsg += `\n__${prefix}fotd__ » Get a random fact for your day (for realistic experience use it once a day)`;
-  helpMsg += `\n__${prefix}mcleaks__ » Validate and show to your server members what MCLeaks account you will use to play Minecraft with them (after using this, renew the token)`;
   helpMsg += `\n**Utility**`;
   helpMsg += `\n__${prefix}mail__ (**BETA**) » Create an email easily (powered by Yandex)`;
   helpMsg += `\n**WARNING:** You shouldn't use these mails for normal use, but for privacy use`;
